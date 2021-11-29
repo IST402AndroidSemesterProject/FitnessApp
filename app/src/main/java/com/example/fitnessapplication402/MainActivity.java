@@ -3,28 +3,23 @@ package com.example.fitnessapplication402;
 import android.os.Bundle;
 import android.widget.GridView;
 import androidx.appcompat.app.AppCompatActivity;
-import java.util.ArrayList;
+import android.content.Context;
+
+import android.view.View;
+import android.view.ViewGroup;
+
+import android.widget.BaseAdapter;
+import android.widget.GridView;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
-
-    GridView coursesGV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        GridView gridview = (GridView) findViewById(R.id.idActivities);
+        gridview.setAdapter(new ImageAdapter(this));
 
-        coursesGV = findViewById(R.id.idActivities);
-
-        ArrayList<ActivityModel> activityModelArrayList = new ArrayList<ActivityModel>();
-        activityModelArrayList.add(new ActivityModel("Steps", R.drawable.foot));
-        activityModelArrayList.add(new ActivityModel("Distance", R.drawable.road));
-        activityModelArrayList.add(new ActivityModel("Calories", R.drawable.flame));
-        activityModelArrayList.add(new ActivityModel("Water", R.drawable.water));
-        activityModelArrayList.add(new ActivityModel("Exercises", R.drawable.workout));
-        activityModelArrayList.add(new ActivityModel("User Info", R.drawable.user));
-
-        ActivityGVAdapter adapter = new ActivityGVAdapter(this, activityModelArrayList);
-        coursesGV.setAdapter(adapter);
     }
 }
