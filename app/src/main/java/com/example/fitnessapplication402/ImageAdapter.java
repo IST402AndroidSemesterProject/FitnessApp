@@ -5,8 +5,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import android.widget.BaseAdapter;
+import android.widget.GridLayout;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class ImageAdapter extends BaseAdapter {
     private Context mContext;
@@ -28,15 +30,26 @@ public class ImageAdapter extends BaseAdapter {
         return 0;
     }
 
-    // create a new ImageView for each item referenced by the Adapter
+    // create a new ImageView and TextView for each item referenced by the Adapter
     public View getView(int position, View convertView, ViewGroup parent) {
         ImageView imageView;
+        TextView textView;
 
         if (convertView == null) {
+
+            //Create the image buttons on screen
             imageView = new ImageView(mContext);
             imageView.setLayoutParams(new GridView.LayoutParams(200, 200));
             imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
             imageView.setPadding(8, 8, 8, 8);
+
+            //Create the text that goes below the image buttons
+/*
+            textView = new TextView(mContext);
+            textView.setLayoutParams(new GridLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
+            textView.setGravity(Gravity.CENTER);
+            textView.setText(R.string.click_on_me);
+*/
         }
         else
         {
@@ -50,6 +63,10 @@ public class ImageAdapter extends BaseAdapter {
     public Integer[] mThumbIds = {
             R.drawable.foot, R.drawable.road,
             R.drawable.water, R.drawable.flame,
-            R.drawable.road, R.drawable.workout,
+            R.drawable.workout, R.drawable.user
+    };
+
+    public String[] activityNames = {
+        "Steps", "Distance", "Water Intake", "Calories Burned", "Recommended", "About Me"
     };
 }
