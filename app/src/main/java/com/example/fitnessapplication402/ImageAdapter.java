@@ -1,6 +1,7 @@
 package com.example.fitnessapplication402;
 import android.content.Context;
 
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -42,20 +43,20 @@ public class ImageAdapter extends BaseAdapter {
             imageView.setLayoutParams(new GridView.LayoutParams(200, 200));
             imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
             imageView.setPadding(8, 8, 8, 8);
-
-            //Create the text that goes below the image buttons
-/*
-            textView = new TextView(mContext);
-            textView.setLayoutParams(new GridLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
-            textView.setGravity(Gravity.CENTER);
-            textView.setText(R.string.click_on_me);
-*/
         }
         else
         {
             imageView = (ImageView) convertView;
         }
+
         imageView.setImageResource(mThumbIds[position]);
+
+        //Create the text that goes below the image buttons
+
+        textView = new TextView(mContext);
+        textView.setTextSize(20);
+        textView.setGravity(Gravity.CENTER);
+        textView.setText(activityNames[position]);
         return imageView;
     }
 
