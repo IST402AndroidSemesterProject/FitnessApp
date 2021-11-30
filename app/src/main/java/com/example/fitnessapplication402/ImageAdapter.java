@@ -40,7 +40,7 @@ public class ImageAdapter extends BaseAdapter {
 
             //Create the image buttons on screen
             imageView = new ImageView(mContext);
-            imageView.setLayoutParams(new GridView.LayoutParams(200, 200));
+            imageView.setLayoutParams(new GridView.LayoutParams(400, 400));
             imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
             imageView.setPadding(8, 8, 8, 8);
         }
@@ -51,14 +51,19 @@ public class ImageAdapter extends BaseAdapter {
 
         imageView.setImageResource(mThumbIds[position]);
 
+
+        /*
         //Create the text that goes below the image buttons
 
         textView = new TextView(mContext);
         textView.setTextSize(20);
         textView.setGravity(Gravity.CENTER);
         textView.setText(activityNames[position]);
+         */
+
         return imageView;
     }
+
 
     // Keep all Images in array
     public Integer[] mThumbIds = {
@@ -67,7 +72,10 @@ public class ImageAdapter extends BaseAdapter {
             R.drawable.workout, R.drawable.user
     };
 
+    /*
     public String[] activityNames = {
         "Steps", "Distance", "Water Intake", "Calories Burned", "Recommended", "About Me"
     };
+
+     */
 }
