@@ -60,7 +60,7 @@ public class DetermineActivity extends Activity implements SensorEventListener, 
         int position = i.getExtras().getInt("id");
         ImageAdapter imageAdapter = new ImageAdapter(this);
 
-        if(imageAdapter.mThumbIds[position] == 2131165287){ // Opens Step Counter
+        if(imageAdapter.mThumbIds[position] == 2131230824){ // Opens Step Counter
             setContentView(R.layout.steps_counter);
 
             // Get an instance of the SensorManager
@@ -98,26 +98,26 @@ public class DetermineActivity extends Activity implements SensorEventListener, 
             });
 
         }
-        else if(imageAdapter.mThumbIds[position] == 2131165329){ // Opens Distance
+        else if(imageAdapter.mThumbIds[position] == 2131230872){ // Opens Distance
             setContentView(R.layout.distance_walked);
             dist = new CalcDistance();
             distanceView = (TextView)findViewById(R.id.Distance);
             dist.CalcTotalDistance(numSteps);
-            distanceView.setText(dist.getTotalDistance().toString());
+            distanceView.setText(String.valueOf(dist.getTotalDistance()));
         }
-        else if(imageAdapter.mThumbIds[position] == 2131165334){ // Water Intake
+        else if(imageAdapter.mThumbIds[position] == 2131230878){ // Water Intake
             setContentView(R.layout.water_counter);
             count = new WaterCount();
             countView = (TextView)findViewById(R.id.WaterCounter);
         }
-        else if(imageAdapter.mThumbIds[position] == 2131165286){ // Calories Burned
+        else if(imageAdapter.mThumbIds[position] == 2131230823){ // Calories Burned
             setContentView(R.layout.calories_burned);
             cal = new CalcCalories();
             calorieView = (TextView)findViewById(R.id.CalorieBurned);
             cal.CalcTotalBurned(numSteps);
             calorieView.setText(String.valueOf(cal.getTotalBurned()));
         }
-        else if(imageAdapter.mThumbIds[position] == 2131165335){ // Warm-up Exercise
+        else if(imageAdapter.mThumbIds[position] == 2131230879){ // Warm-up Exercise
             int min = 1;
             int max = 8;
             setContentView(R.layout.warmup_randomizer);

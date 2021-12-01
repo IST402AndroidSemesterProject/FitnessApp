@@ -1,7 +1,7 @@
 package com.example.fitnessapplication402;
 
 public class CalcDistance {
-    private int dCalced;
+    private double dCalced;
 
     public CalcDistance(){
         dCalced = 0;
@@ -9,7 +9,7 @@ public class CalcDistance {
     public void CalcTotalDistance(int steps){
         dCalced = ((29 * steps) / 12) / 5280;
     }
-    public Integer getTotalDistance(){
+    public Double getTotalDistance(){
         return dCalced;
     }
 }
