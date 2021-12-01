@@ -9,4 +9,111 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="zero">0</string>
+    <string name="tap_btn">+ 8oz Cup of Water</string>
+    <string name="CalorieMsg">Calories Burned Today</string>
+    <string name="DistWalkedMsg">Total Distance Today</string>
+
+
+<!-- Warm-up List -->
+    <string name="warmupCalf">Calf Stretch</string>
+    <string name="warmupHamstring">Hamstring Stretch</string>
+    <string name="warmupQuads">Quadriceps Stretch</string>
+    <string name="warmupHipFlex">Hip Flexor Stretch</string>
+    <string name="warmupIliotibial">Iliotibial Band Stretch</string>
+    <string name="warmupKneeToChest">Knee-To-Chest Stretch</string>
+    <string name="warmupShouldler">Shoulder Stretch</string>
+    <string name="warmupNeck">Neck Stretch</string>
+
+
+    <string name="warmupCalfText">
+        Your calf muscle runs along the back of your lower leg. To stretch your calf muscles:
+    <ul>
+        <li>Stand at arm\'s length from a wall or a piece of sturdy exercise equipment.</li>
+        <li>Place your right foot behind your left foot.</li>
+        <li>Slowly bend your left leg forward, keeping your right knee straight and your right heel on the floor.</li>
+        <li>Hold your back straight and your hips forward. Don\'t rotate your feet inward or outward.</li>
+        <li>Hold for about 30 seconds.</li>
+        <li>Switch legs and repeat.</li>
+        <li>To deepen the stretch, slightly bend your right knee as you bend your left leg forward.</li>
+    </ul>
+</string>
+
+    <string name="warmupHamstringText">
+        Your hamstring muscle runs along the back of your upper leg. To stretch your hamstring muscles:
+    <ul>
+        <li>Lie on the floor near the outer corner of a wall or a door frame.</li>
+        <li>Raise your left leg and rest your left heel against the wall. Keep your left knee slightly bent.</li>
+        <li>Gently straighten your left leg until you feel a stretch along the back of your left thigh.</li>
+        <li>Hold for about 30 seconds.</li>
+        <li>Switch legs and repeat.</li>
+        <li>As your flexibility increases, maximize the stretch by gradually scooting yourself closer to the wall or door frame.</li>
+    </ul>
+</string>
+
+    <string name="warmupQuadsText">
+        Your quadriceps muscle runs along the front of your thigh. To stretch your quadriceps muscles:
+    <ul>
+        <li>Stand near a wall or a piece of sturdy exercise equipment for support.</li>
+        <li>Grasp your ankle and gently pull your heel up and back until you feel a stretch in the front of your thigh.</li>
+        <li>Tighten your stomach muscles to prevent your stomach from sagging outward, and keep your knees close together.</li>
+        <li>Hold for about 30 seconds.</li>
+        <li>Switch legs and repeat.</li>
+    </ul>
+</string>
+
+    <string name="warmupHipFlexText">
+        Your hip flexors, which allow you to lift your knees and flex at the waist, are located on your upper thighs, just below your hipbones. To stretch your hip flexors:
+    <ul>
+        <li>Kneel on your right knee, cushioning your kneecap with a folded towel.</li>
+        <li>Place your left foot in front of you, bending your knee and placing your left hand on your left leg for stability.</li>
+        <li>Place your right hand on your right hip to avoid bending at the waist. Keep your back straight and abdominal muscles tight.</li>
+        <li>Lean forward, shifting more body weight onto your front leg. You\'ll feel a stretch in your right thigh.</li>
+        <li>Hold for about 30 seconds.</li>
+        <li>Switch legs and repeat.</li>
+    </ul>
+</string>
+
+    <string name="warmupIliotibialText">
+        The iliotibial band (ITB) is a band of tissue that runs along the outside of your hip, thigh and knee. To stretch your ITB:
+    <ul>
+        <li>Stand near a wall or a piece of sturdy exercise equipment for support.</li>
+        <li>Cross your left leg over your right leg at the ankle.</li>
+        <li>Extend your left arm overhead, reaching toward your right side. You\'ll feel a stretch along your left hip.</li>
+        <li>Hold for about 30 seconds.</li>
+        <li>Switch sides and repeat.</li>
+    </ul>
+</string>
+
+    <string name="warmupKneeToChestText">
+        The knee-to-chest stretch focuses on the muscles of your lower back. Avoid this stretch if you have osteoporosis because it may increase the risk of compression fractures in your vertebrae.
+    <ul>
+        <li>Lie on your back on a firm surface with the backs of your heels flat on the floor.</li>
+        <li>Gently pull one knee up to your chest until you feel a stretch in your lower back.</li>
+        <li>Bring the knee as close to your chest as comfortably possible.</li>
+        <li>Keep the opposite leg relaxed in a comfortable position, either with your knee bent or with your leg extended.</li>
+        <li>Hold for about 30 seconds.</li>
+        <li>Switch legs and repeat.</li>
+    </ul>
+</string>
+
+    <string name="warmupShoudlerText">
+        If the back of your shoulder is tight, you may be more likely to develop rotator cuff problems, especially if you golf or participate in overhead racket or throwing sports, such as tennis or baseball. To keep your shoulders flexible:
+    <ul>
+        <li>Bring your left arm across your body and hold it with your right arm, either above or below the elbow.</li>
+        <li>Hold for about 30 seconds.</li>
+        <li>Switch arms and repeat.</li>
+    </ul>
+</string>
+
+    <string name="warmupNeckText">
+        Your hip flexors, which allow you to lift your knees and flex at the waist, are located on your upper thighs, just below your hipbones. To stretch your hip flexors:
+    <ul>
+        <li>Bend your head forward and slightly to the right.</li>
+        <li>With your right hand, gently pull your head downward. You\'ll feel a nice, easy stretch along the back left side of your neck.</li>
+        <li>Hold for about 30 seconds.</li>
+        <li>Repeat on the opposite side.</li>
+    </ul>
+</string>
+
 </resources>

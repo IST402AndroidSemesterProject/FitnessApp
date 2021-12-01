@@ -69,7 +69,7 @@ public class ImageAdapter extends BaseAdapter {
     public Integer[] mThumbIds = {
             R.drawable.foot, R.drawable.road,
             R.drawable.water, R.drawable.flame,
-            R.drawable.workout, R.drawable.user
+            R.drawable.workout
     };
 
     /*
