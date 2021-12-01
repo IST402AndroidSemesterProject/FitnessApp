@@ -113,9 +113,9 @@ public class DetermineActivity extends Activity implements SensorEventListener, 
         else if(imageAdapter.mThumbIds[position] == 2131165286){ // Calories Burned
             setContentView(R.layout.calories_burned);
             cal = new CalcCalories();
-            calorieView = (TextView)findViewById(R.id.Distance);
+            calorieView = (TextView)findViewById(R.id.CalorieBurned);
             cal.CalcTotalBurned(numSteps);
-            calorieView.setText(cal.getTotalBurned().toString());
+            calorieView.setText(String.valueOf(cal.getTotalBurned()));
         }
         else if(imageAdapter.mThumbIds[position] == 2131165335){ // Warm-up Exercise
             int min = 1;
